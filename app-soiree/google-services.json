@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "533024028719",
+    "firebase_url": "https://app-soiree.firebaseio.com",
+    "project_id": "app-soiree",
+    "storage_bucket": "app-soiree.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:533024028719:android:f4789cb0fef2f783",
+        "android_client_info": {
+          "package_name": "com.unetite.binouze"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "533024028719-i4d2102rf245pfo368rnoc6aciujh65h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAA9XsIP1-PzaV3N6DmYNBF9c5bCj8sh9g"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
