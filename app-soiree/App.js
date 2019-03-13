@@ -1,28 +1,33 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
-import LogInScreen from './screens/LogInScreen.js'
+import { StyleSheet, Text, View, Button } from 'react-native';
+import LogInScreen from './screens/LogInScreen.js';
+import HomeScreen from './screens/HomeScreen.js';
 import * as firebase from 'firebase';
 
+import { createStackNavigator, createAppContainer } from 'react-navigation';
 
-export default class App extends React.Component {
+const MainNavigator = createStackNavigator({
+  LogIn: {screen: LogInScreen },
+  Home: {screen: HomeScreen }
+});
+
+const App = createAppContainer(MainNavigator);
+
+export default App;
+/*export default class Appp extends React.Component {
   render() {
     return (
       <View style={styles.container}>
         <Text>Open up App.js to start working on your app!</Text>
+        <Button
+          title="Go to Details"
+          onPress={() => this.props.navigation.navigate('LogIn')}
+        />
         <LogInScreen />
       </View>
     );
   }
-}
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+}*/
 
 // Initialize Firebase
 const firebaseConfig = {

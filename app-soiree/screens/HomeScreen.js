@@ -12,10 +12,10 @@ export default class LogInScreen extends Component {
         const {navigate} = this.props.navigation;
         return(
             <View style={styles.container}>
-                <Text>Bonjour tu es sur LogInScreen</Text>
+                <Text>Bonjour tu es sur HomeScreen</Text>
                 <Button
-                    title="Go to Home"
-                    onPress={() => navigate('Home')}
+                    title="Go to LogIn"
+                    onPress={() => navigate('LogIn')}
                 />
             </View>
         )
